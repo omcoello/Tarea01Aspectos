@@ -27,7 +27,6 @@ public class PaneManagement extends JFrame {
 		pane.add(buttonA);
 		pane.add(buttonB);
 		pane.add(buttonC);
-		pane.add(showButton);
 
 		//Anadiendo evento a botones
 		
