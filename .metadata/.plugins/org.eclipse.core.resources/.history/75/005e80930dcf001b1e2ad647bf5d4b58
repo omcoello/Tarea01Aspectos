@@ -1,0 +1,16 @@
+import javax.swing.JFrame;
+public aspect Notification {
+	
+	pointcut notificateA(): execution(* methodA*(..));
+	after(): notificate(){
+		System.out.println("Se ha cambiado el fondo a color amarillo");
+	}
+	pointcut notificateB(): execution(* methodB*(..));
+	after(): notificate(){
+		System.out.println("Se ha cambiado el fondo a color azul");
+	}
+	pointcut notificateC(): execution(* methodC*(..));
+	after(): notificate(){
+		System.out.println("Se ha cambiado el fondo a color cian");
+	}
+}
